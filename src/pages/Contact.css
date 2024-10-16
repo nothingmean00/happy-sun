@@ -1,0 +1,114 @@
+/* src/components/Contact.css */
+
+/* Root Variables */
+:root {
+  --primary-color: #4a90e2; /* Blue */
+  --secondary-color: #f8f9fa; /* Light Gray */
+  --accent-color: #ffd700; /* Gold */
+  --text-color: #333; /* Dark Gray */
+  --light-text: #fff; /* White */
+  --transition-speed: 0.3s;
+}
+
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+label,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 0;
+  background-color: var(--secondary-color); /* Updated background color */
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.contact-section p {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--light-text);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+}

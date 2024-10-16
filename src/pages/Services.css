@@ -1,0 +1,483 @@
+/* Root Variables (Ensure these are defined in your global CSS if not already) */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ffd700;
+  --text-color: #333;
+  --light-text: #fff;
+  --header-height: 80px;
+}
+
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Enhanced Hero Section */
+.services-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-text);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.services-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+/* About Us Preview */
+.services-about {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+}
+
+.services-about h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.learn-more-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+/* Detailed Services */
+.detailed-services {
+  padding: 60px 0;
+}
+
+.detailed-services h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background-color: var(--light-text);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.service-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Benefits */
+.services-benefits {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+}
+
+.services-benefits h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.benefits-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefit-item {
+  background-color: var(--light-text);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.benefit-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Benefits Icons Removed */
+/* Removed .benefit-icon styles */
+
+/* Testimonials */
+.services-testimonials {
+  padding: 60px 0;
+}
+
+.services-testimonials h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.testimonial {
+  background-color: var(--light-text);
+  color: var(--text-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.testimonial h4 {
+  text-align: right;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* FAQ Section */
+.services-faq {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+}
+
+.services-faq h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.accordion__button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.accordion__button:hover,
+.accordion__button[aria-expanded="true"] {
+  background-color: var(--accent-color);
+}
+
+.accordion__panel {
+  padding: 15px;
+  background-color: var(--light-text);
+  border-radius: 0 0 5px 5px;
+  border: 1px solid var(--primary-color);
+  margin-top: -5px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+/* Social Proof */
+.services-social-proof {
+  padding: 60px 0;
+}
+
+.services-social-proof h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.certifications {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certifications img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.certifications img:hover {
+  transform: scale(1.1);
+}
+
+/* Call to Action */
+.services-cta {
+  padding: 60px 0;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.services-cta h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.services-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-text {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-item {
+    width: 80%;
+  }
+
+  .certifications img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-hero p {
+    font-size: 1.2rem;
+  }
+
+  .services-testimonials h2,
+  .services-about h2,
+  .detailed-services h2,
+  .services-benefits h2,
+  .services-faq h2,
+  .services-social-proof h2,
+  .services-cta h2 {
+    font-size: 2rem;
+  }
+
+  .service-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-item p {
+    font-size: 0.9rem;
+  }
+
+  .testimonial p {
+    font-size: 1rem;
+  }
+
+  .testimonial h4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero {
+    height: 60vh;
+  }
+
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-hero p {
+    font-size: 1rem;
+  }
+
+  .detailed-services h2,
+  .services-benefits h2,
+  .services-testimonials h2,
+  .services-faq h2,
+  .services-social-proof h2,
+  .services-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-item p {
+    font-size: 0.8rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 1rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

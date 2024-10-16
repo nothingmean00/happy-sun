@@ -1,0 +1,39 @@
+/* src/pages/NotFound.css */
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-page h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.not-found-page p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.home-button {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
+}
+
+.home-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
